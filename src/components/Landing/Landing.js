@@ -2,6 +2,18 @@ import Image from "next/image";
 import tw from "twin.macro";
 import "styled-components/macro";
 
+const PinkButton = tw.button`
+uppercase
+py-2
+px-4
+rounded-lg
+bg-pink-500
+hover:bg-pink-400
+border-2 border-transparent
+text-white
+mr-4
+`;
+
 export default function Landing() {
   return (
     <div tw="bg-white flex mx-40 z-20 items-center overflow-hidden">
@@ -18,12 +30,7 @@ export default function Landing() {
             and human existence take place.
           </p>
           <div tw="flex mt-8">
-            <a
-              href="#"
-              tw="uppercase py-2 px-4 rounded-lg bg-pink-500 border-2 border-transparent text-white mr-4 hover:bg-pink-400"
-            >
-              Get started
-            </a>
+            <PinkButton href="#">Get started</PinkButton>
             <a
               href="#"
               tw="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark:text-white hover:bg-pink-500 hover:text-white"
