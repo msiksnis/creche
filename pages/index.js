@@ -1,17 +1,19 @@
 import Head from "next/head";
-import Landing from "../components/Landing/Landing";
+import WebTicker from "../components/Ticker/WebTicker";
+import Welcome from "../components/Welcome/Welcome";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="">
       <Head>
-        <title>Twin.Macro</title>
+        <title>Colchester Canine Creche</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <Landing />
-      </main>
+      <div>
+        <WebTicker />
+        <Welcome />
+      </div>
     </div>
   );
 }
