@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <div className="mb-96 flex flex-col items-center px-40">
+    <div className="mb-96 flex flex-col items-center">
       <h1 className="mt-10 text-3xl text-[#7BC140]">
         Welcome to Colchester Canine Creche
       </h1>
@@ -33,7 +33,7 @@ export default function Welcome() {
         </p>
       </div>
       <button className="rounded bg-[#7BC140] px-10 pt-3 pb-2 font-medium uppercase tracking-wide text-blue-600 shadow-lg transition-all duration-300 hover:bg-[#9bdb67]">
-        <Link href="#">Find out more about our pawlosophy</Link>
+        <Link href="#">Our pawlosophy</Link>
       </button>
     </div>
   );

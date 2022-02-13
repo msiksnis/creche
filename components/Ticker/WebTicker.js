@@ -4,10 +4,10 @@ import { tickerImages } from "../../data/ticker-images";
 
 export default function WebTicker() {
   return (
-    <div className="mt-8 w-[100vw] max-w-screen-2xl px-40">
+    <div className="mt-8  max-w-screen-2xl">
       <Ticker speed={5} offset={0}>
         {({ index }) => (
-          <div className="flex w-full overflow-hidden">
+          <div className="flex w-full">
             {tickerImages.map((image) => (
               <div key={image.id} className="flex p-2">
                 <Image
