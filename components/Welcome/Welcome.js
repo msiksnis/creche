@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <div className="mb-96 flex flex-col items-center">
-      <h1 className="mt-10 text-3xl text-[#7BC140]">
+    <div className="mb-96 flex flex-col items-center px-4 md:px-0">
+      <h1 className="mt-10 text-center text-3xl text-[#7BC140]">
         Welcome to Colchester Canine Creche
       </h1>
       <h2 className="mt-4 text-lg font-medium">
         The home of Luxury Doggie Day Care.
       </h2>
-      <div className="mt-14 mb-10 w-2/3 space-y-2 text-[17px] font-light leading-6 tracking-wide text-gray-600">
+      <div className="mt-14 mb-10 space-y-2 text-[17px] font-light leading-6 tracking-wide text-gray-600 lg:w-2/3">
         <p>
           Colchester Canine Creche offer the complete package of canine care,
           this type of facility is innovative, with service levels at an

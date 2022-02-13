@@ -9,9 +9,9 @@ export default function Nav() {
       <span className="inline-flex transition-all duration-200 hover:text-[#7BC140]">
         <Link href="#">Puppy Parties</Link>
       </span>
-      {/* <span className="inline-flex transition-all duration-200 hover:text-[#7BC140]">
+      <span className="inline-flex transition-all duration-200 hover:text-[#7BC140]">
         <Link href="#">Pack Leaders</Link>
-      </span> */}
+      </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#7BC140]">
         <Link href="#">Health & Safety</Link>
       </span>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HeaderBig from "./HeaderBig";
 import HeaderSmall from "./HeaderSmall";
+import MobileHeader from "./Mobile/MobileHeader";
 
 export default function Header() {
   const [headerSize, setHeaderSize] = useState(false);
@@ -19,17 +20,22 @@ export default function Header() {
   }, [switchHeader]);
 
   return (
-    <>
-      {headerSize ? (
-        <div className="">
-          <div className="opacity-0">
-            <HeaderBig />
+    <header>
+      <span className="md:hidden">
+        <MobileHeader />
+      </span>
+      <span className="hidden md:inline">
+        {headerSize ? (
+          <div className="">
+            <div className="opacity-0">
+              <HeaderBig />
+            </div>
+            <HeaderSmall />
           </div>
-          <HeaderSmall />
-        </div>
-      ) : (
-        <HeaderBig />
-      )}
-    </>
+        ) : (
+          <HeaderBig />
+        )}
+      </span>
+    </header>
   );
 }
