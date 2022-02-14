@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-poppins max-w-screen-2xl bg-[#ffffff] pt-14 md:px-6 md:pt-0 lg:px-20 xl:px-40;
+    @apply font-poppins max-w-screen-2xl bg-[#ffffff] pt-14 md:pt-0;
   }
 
   /* Spinner stylings and animation */

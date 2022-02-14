@@ -4,7 +4,7 @@ import SocialButtons from "./SocialButtons";
 
 export default function HeaderBig() {
   return (
-    <div className="flex w-full items-end justify-between pt-4">
+    <div className="flex w-full items-end justify-between pt-4 md:px-6 lg:px-20 xl:px-40">
       <div className="">
         <Image
           className="object-contain"
