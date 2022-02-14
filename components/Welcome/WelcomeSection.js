@@ -54,7 +54,7 @@ export default function WelcomeSection() {
           allowFullScreen
         />
       </div>
-      <button className="rounded bg-[#7BC140] px-10 pt-3 pb-2 font-medium uppercase tracking-wide text-blue-600 shadow-lg transition-all duration-300 hover:bg-[#9bdb67]">
+      <button className="rounded bg-[#4FC5FF] px-10 pt-3 pb-2 font-medium uppercase tracking-wide text-gray-700 shadow-md transition-all duration-300 hover:bg-[#80d4ff]">
         <Link href="#">More bout our pawlosophy</Link>
       </button>
     </div>

@@ -21,7 +21,7 @@ export default function FeelGuilty() {
         </p>
       </div>
       <div className="flex min-h-[530px] w-full flex-col justify-around bg-[#4FC5FF] p-4 md:flex-row md:p-10">
-        <div className="text-[17px] font-light leading-6 tracking-wide text-gray-800">
+        <div className="text-[17px] font-light leading-6 tracking-wide text-gray-800 md:pr-2">
           <h1 className="text-center text-xl font-medium text-gray-700 md:mt-2 md:pl-10 md:text-left md:text-2xl">
             Need Day Care For Your Dog That You Can Count On?
           </h1>
@@ -68,12 +68,12 @@ export default function FeelGuilty() {
             </div>
           </div>
           <div className="flex justify-around space-x-0 pb-10 md:justify-center md:space-x-10">
-            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md hover:bg-[#9bdb67]">
+            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67]">
               <Link href="#">
                 <a>See our facilities</a>
               </Link>
             </button>
-            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md hover:bg-[#9bdb67]">
+            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67]">
               <Link href="#">
                 <a>How to join us</a>
               </Link>
