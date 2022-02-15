@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 
 export default function Page({ children }) {
@@ -5,6 +6,7 @@ export default function Page({ children }) {
     <div>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 }

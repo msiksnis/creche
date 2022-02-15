@@ -8,8 +8,12 @@ module.exports = {
       },
       animation: {
         tilt: "tilt 10s infinite linear",
+        rotate: "rotate 200ms ease-in-out",
       },
       keyframes: {
+        rotate: {
+          "0%": { transform: "rotate(-180deg)" },
+        },
         tilt: {
           "0%, 50%, 100%": {
             transform: "rotate(0deg)",

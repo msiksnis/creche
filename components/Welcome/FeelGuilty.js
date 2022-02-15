@@ -68,12 +68,12 @@ export default function FeelGuilty() {
             </div>
           </div>
           <div className="flex justify-around space-x-0 pb-10 md:justify-center md:space-x-10">
-            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67]">
+            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67] md:px-10">
               <Link href="#">
                 <a>See our facilities</a>
               </Link>
             </button>
-            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67]">
+            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67] md:px-10">
               <Link href="#">
                 <a>How to join us</a>
               </Link>

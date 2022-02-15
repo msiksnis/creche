@@ -12,7 +12,8 @@ grid-rows-2
 const NavLink = tw(motion.li)`
 flex
 items-center
-text-blue-600
+text-gray-600
+tracking-wide
 `;
 
 const Anker = tw(motion.a)`
