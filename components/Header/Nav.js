@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <div className="space-x-6 pb-1 text-lg text-gray-600">
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
-        <Link href="#">Day Creche</Link>
+        <Link href="/day-care-centre">Day Creche</Link>
       </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
         <Link href="#">Puppy Parties</Link>

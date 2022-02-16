@@ -2,6 +2,7 @@ import "styled-components/macro";
 import { useState } from "react";
 import { AccordionToggle } from "./AccordionToggle";
 import Link from "next/link";
+import { PrimaryButton } from "../StyledTags";
 
 export default function InfoSection({ data }) {
   const [isOpen, setOpen] = useState(true);
@@ -36,9 +37,9 @@ export default function InfoSection({ data }) {
                 <p className="pb-10 font-light leading-6 tracking-wide text-gray-700">
                   {data.text}
                 </p>
-                <button className="w-40 rounded bg-[#4EC4FF] px-4 py-2 text-sm tracking-wide shadow-md hover:bg-[#80d4ff]">
+                <PrimaryButton className="w-40 px-4 py-2 text-xs">
                   <Link href={data.url}>Read More</Link>
-                </button>
+                </PrimaryButton>
               </div>
             ) : (
               ""

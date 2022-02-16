@@ -1,24 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { SecondaryButton, Text, Title } from "../StyledTags";
 
 export default function FeelGuilty() {
   return (
-    <div className="mb-20 mt-10 flex flex-col items-center">
-      <div className="flex flex-col items-center px-4 md:px-0">
-        <h1 className="text-center text-2xl text-[#7BC140] md:text-3xl">
+    <div className="mb-20 mt-10 flex flex-col items-center lg:mt-16">
+      <div className="flex flex-col items-center px-4 md:px-6 lg:px-20 xl:px-40">
+        <Title>
           Do you ever feel guilty about leaving your dog at home alone?
           <br />
           Now you don't have to!
-        </h1>
-        <p className="mt-10 mb-10 space-y-2 text-[17px] font-light leading-6 tracking-wide text-gray-600 md:mt-14 lg:w-4/5">
+        </Title>
+        <Text>
           Our spacious custom-designed facility provides fun, exercise and
           social interaction, all essential to a dog's well-being. Simply drop
           your pooch off for a few hours, half day, or the entire working day
           and we will entertain, play, fuss and make your dogs day! You will
           collect a very tired, happy and contented dog that cannot wait to
           visit next time!
-        </p>
+        </Text>
       </div>
       <div className="flex min-h-[530px] w-full flex-col justify-around bg-[#4FC5FF] p-4 md:flex-row md:p-10">
         <div className="text-[17px] font-light leading-6 tracking-wide text-gray-800 md:pr-2">
@@ -68,16 +69,16 @@ export default function FeelGuilty() {
             </div>
           </div>
           <div className="flex justify-around space-x-0 pb-10 md:justify-center md:space-x-10">
-            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67] md:px-10">
+            <SecondaryButton className="py-2 px-4 md:px-10">
               <Link href="#">
                 <a>See our facilities</a>
               </Link>
-            </button>
-            <button className="rounded-md bg-[#7BC140] py-2 px-4 text-sm font-medium uppercase tracking-wide shadow-md transition-all duration-200 hover:bg-[#9bdb67] md:px-10">
+            </SecondaryButton>
+            <SecondaryButton className="py-2 px-4 md:px-10">
               <Link href="#">
                 <a>How to join us</a>
               </Link>
-            </button>
+            </SecondaryButton>
           </div>
         </div>
         <Image

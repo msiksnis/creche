@@ -1,16 +1,17 @@
 import Link from "next/link";
+import { Padding, PrimaryButton, Text } from "../StyledTags";
 
 export default function WelcomeSection() {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col items-center px-4 md:px-0">
+      <Padding className="flex flex-col items-center">
         <h1 className="mt-10 text-center text-2xl text-[#7BC140] md:text-3xl">
           Welcome to Colchester Canine Creche
         </h1>
         <h2 className="mt-4 text-center font-medium md:text-lg">
           The home of Luxury Doggie Day Care.
         </h2>
-        <div className="mt-10 mb-10 space-y-2 text-[17px] font-light leading-6 tracking-wide text-gray-600 md:mt-14 lg:w-4/5">
+        <Text>
           <p>
             Colchester Canine Creche offer the complete package of canine care,
             this type of facility is innovative, with service levels at an
@@ -32,8 +33,8 @@ export default function WelcomeSection() {
             dog off site or travel to another location, your dogs are safe and
             secure at all times.
           </p>
-        </div>
-      </div>
+        </Text>
+      </Padding>
       <div className="mb-10 flex flex-col space-y-4 md:mb-14 md:flex-row md:space-y-0 md:space-x-10">
         <iframe
           width="354"
@@ -54,9 +55,9 @@ export default function WelcomeSection() {
           allowFullScreen
         />
       </div>
-      <button className="rounded bg-[#4FC5FF] px-10 pt-3 pb-2 font-medium uppercase tracking-wide text-gray-700 shadow-md transition-all duration-300 hover:bg-[#80d4ff]">
+      <PrimaryButton className="px-10 pt-3 pb-2">
         <Link href="#">More bout our pawlosophy</Link>
-      </button>
+      </PrimaryButton>
     </div>
   );
 }
