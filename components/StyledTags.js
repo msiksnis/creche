@@ -42,7 +42,7 @@ hover:bg-[#9bdb67]
 `;
 
 export const Text = tw.h2`
-mt-10
+mt-6
 mb-10
 space-y-2
 text-[17px]
@@ -50,6 +50,6 @@ font-light
 leading-6
 tracking-wide
 text-gray-600
-md:mt-14
+md:mt-6
 xl:w-4/5
 `;

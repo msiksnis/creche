@@ -12,7 +12,7 @@ export default function FeelGuilty() {
           <br />
           Now you don't have to!
         </Title>
-        <Text>
+        <Text className="pt-2 lg:pt-8">
           Our spacious custom-designed facility provides fun, exercise and
           social interaction, all essential to a dog's well-being. Simply drop
           your pooch off for a few hours, half day, or the entire working day

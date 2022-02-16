@@ -1,14 +1,12 @@
 import Link from "next/link";
-import { Padding, PrimaryButton, Text } from "../StyledTags";
+import { Padding, PrimaryButton, Text, Title } from "../StyledTags";
 
 export default function WelcomeSection() {
   return (
     <div className="flex flex-col items-center">
       <Padding className="flex flex-col items-center">
-        <h1 className="mt-10 text-center text-2xl text-[#7BC140] md:text-3xl">
-          Welcome to Colchester Canine Creche
-        </h1>
-        <h2 className="mt-4 text-center font-medium md:text-lg">
+        <Title className="mt-10">Welcome to Colchester Canine Creche</Title>
+        <h2 className="mt-4 pb-2 text-center font-medium md:text-lg lg:pb-8">
           The home of Luxury Doggie Day Care.
         </h2>
         <Text>

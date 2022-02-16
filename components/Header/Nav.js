@@ -7,19 +7,19 @@ export default function Nav() {
         <Link href="/day-care-centre">Day Creche</Link>
       </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
-        <Link href="#">Puppy Parties</Link>
+        <Link href="/puppy-parties">Puppy Parties</Link>
       </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
-        <Link href="#">Pack Leaders</Link>
+        <Link href="/pack-leaders">Pack Leaders</Link>
       </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
-        <Link href="#">Health & Safety</Link>
+        <Link href="/health-safety">Health & Safety</Link>
       </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
-        <Link href="#">FAQ</Link>
+        <Link href="/faq">FAQ</Link>
       </span>
       <span className="inline-flex transition-all duration-200 hover:text-[#0094CB]">
-        <Link href="#">How to Join</Link>
+        <Link href="/how-to-join">How to Join</Link>
       </span>
     </div>
   );

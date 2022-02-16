@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Padding } from "../StyledTags";
 import Nav from "./Nav";
 import SocialButtons from "./SocialButtons";
 
 export default function HeaderBig() {
   return (
-    <div className="flex w-full items-end justify-between pt-4 md:px-6 lg:px-20 xl:px-40">
+    <Padding className="flex w-full items-end justify-between pt-4">
       <Link href="/">
         <Image
           className="cursor-pointer object-contain"
@@ -17,8 +18,10 @@ export default function HeaderBig() {
       <div className="">
         <div className="mb-10 flex justify-end">
           <div className="flex flex-col items-end -space-y-1">
-            <span className="text-gray-600">Telephone: 01206 768222</span>
-            <span className="text-gray-600">
+            <span className="text-sm text-gray-600">
+              Telephone: 01206 768222
+            </span>
+            <span className="text-sm text-gray-600 hover:text-black">
               <a
                 href="info@colchestercaninecreche.co.uk"
                 target="_blank"
@@ -34,6 +37,6 @@ export default function HeaderBig() {
         </div>
         <Nav />
       </div>
-    </div>
+    </Padding>
   );
 }
