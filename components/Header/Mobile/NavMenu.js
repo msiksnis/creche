@@ -3,6 +3,7 @@ import tw from "twin.macro";
 import "styled-components/macro";
 import Link from "next/link";
 import SocialButtons from "../SocialButtons";
+import { useRouter } from "next/router";
 
 const Nav = tw.ul`
 grid
@@ -45,123 +46,167 @@ const variantsSecond = {
 };
 
 export function NavMenu({ toggle, isOpen }) {
+  const router = useRouter();
+
   return (
     <Nav>
       <div className="mt-6 space-y-3 text-gray-700">
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.25, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.1, duration: 0.05 },
-            },
-          }}
-          onClick={toggle}
-        >
-          <Link href="#">
-            <Anker>Day Creche</Anker>
-          </Link>
-        </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.2, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.05, duration: 0.05 },
-            },
-          }}
-          onClick={toggle}
-        >
-          <Link href="#">
-            <Anker>Puppy Parties</Anker>
-          </Link>
-        </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.3, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.15, duration: 0.05 },
-            },
-          }}
-          onClick={toggle}
-        >
-          <Link href="#">
-            <Anker>Pack Leaders</Anker>
-          </Link>
-        </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.35, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.2, duration: 0.05 },
-            },
-          }}
-          onClick={toggle}
-        >
-          <Link href="#">
-            <Anker>Health & Safety</Anker>
-          </Link>
-        </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.4, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.25, duration: 0.05 },
-            },
-          }}
-          onClick={toggle}
-        >
-          <Link href="#">
-            <Anker>FAQ</Anker>
-          </Link>
-        </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.5, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.35, duration: 0.05 },
-            },
-          }}
-          onClick={toggle}
-        >
-          <Link href="#">
-            <Anker>How to Join</Anker>
-          </Link>
-        </NavLink>
+        <Link href="day-care-centre">
+          <NavLink
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={{
+              show: {
+                ...variants.show,
+                transition: { delay: 0.25, duration: 0.2 },
+              },
+              hide: {
+                ...variants.hide,
+                transition: { delay: 0.1, duration: 0.05 },
+              },
+            }}
+            onClick={toggle}
+          >
+            <Anker
+              className={`${
+                router.pathname === "/day-care-centre"
+                  ? "pl-2 text-[#0094CB]"
+                  : ""
+              }`}
+            >
+              Day Creche
+            </Anker>
+          </NavLink>
+        </Link>
+        <Link href="/puppy-parties">
+          <NavLink
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={{
+              show: {
+                ...variants.show,
+                transition: { delay: 0.2, duration: 0.2 },
+              },
+              hide: {
+                ...variants.hide,
+                transition: { delay: 0.05, duration: 0.05 },
+              },
+            }}
+            onClick={toggle}
+          >
+            <Anker
+              className={`${
+                router.pathname === "/puppy-parties"
+                  ? "pl-2 text-[#0094CB]"
+                  : ""
+              }`}
+            >
+              Puppy Parties
+            </Anker>
+          </NavLink>
+        </Link>
+        <Link href="/pack-leaders">
+          <NavLink
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={{
+              show: {
+                ...variants.show,
+                transition: { delay: 0.3, duration: 0.2 },
+              },
+              hide: {
+                ...variants.hide,
+                transition: { delay: 0.15, duration: 0.05 },
+              },
+            }}
+            onClick={toggle}
+          >
+            <Anker
+              className={`${
+                router.pathname === "/pack-leaders" ? "pl-2 text-[#0094CB]" : ""
+              }`}
+            >
+              Pack Leaders
+            </Anker>
+          </NavLink>
+        </Link>
+        <Link href="/health-safety">
+          <NavLink
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={{
+              show: {
+                ...variants.show,
+                transition: { delay: 0.35, duration: 0.2 },
+              },
+              hide: {
+                ...variants.hide,
+                transition: { delay: 0.2, duration: 0.05 },
+              },
+            }}
+            onClick={toggle}
+          >
+            <Anker
+              className={`${
+                router.pathname === "/health-safety"
+                  ? "pl-2 text-[#0094CB]"
+                  : ""
+              }`}
+            >
+              Health & Safety
+            </Anker>
+          </NavLink>
+        </Link>
+        <Link href="/faq">
+          <NavLink
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={{
+              show: {
+                ...variants.show,
+                transition: { delay: 0.4, duration: 0.2 },
+              },
+              hide: {
+                ...variants.hide,
+                transition: { delay: 0.25, duration: 0.05 },
+              },
+            }}
+            onClick={toggle}
+          >
+            <Anker
+              className={`${
+                router.pathname === "/faq" ? "pl-2 text-[#0094CB]" : ""
+              }`}
+            >
+              FAQ
+            </Anker>
+          </NavLink>
+        </Link>
+        <Link href="/how-to-join">
+          <NavLink
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={{
+              show: {
+                ...variants.show,
+                transition: { delay: 0.5, duration: 0.2 },
+              },
+              hide: {
+                ...variants.hide,
+                transition: { delay: 0.35, duration: 0.05 },
+              },
+            }}
+            onClick={toggle}
+          >
+            <Anker
+              className={`${
+                router.pathname === "/how-to-join" ? "pl-2 text-[#0094CB]" : ""
+              }`}
+            >
+              How to Join
+            </Anker>
+          </NavLink>
+        </Link>
       </div>
       <div className="flex items-end justify-center">
         <motion.button
